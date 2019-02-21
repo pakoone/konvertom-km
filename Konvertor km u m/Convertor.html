@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/style.css">
+
+<title>Konvertor kilometara u metre</title>
+</head>
+<body>
+
+ <h2 class="naslov">Konvertor</h2>
+<p>
+  <label>Kilometri:</label>
+  <input id="inputKilometre" type="number" placeholder="Kilometri" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Metri: <span id="outputMeters"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum*1000;
+}
+</script>
+</body>
+</html>
